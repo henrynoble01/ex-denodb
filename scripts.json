@@ -1,0 +1,30 @@
+{
+  "$schema": "https://deno.land/x/denon@2.5.0/schema.json",
+  "scripts": {
+    "start": {
+      "cmd": "deno run  mod.ts",
+      "desc": "run my mod.ts file",
+      "lock": "lock.json",
+      "allow": [
+        "write"
+      ],
+      "watch": true,
+      "watcher": {
+        "exts": [
+          "ts",
+          "tsx",
+          "json"
+        ],
+        "skip": [
+          "*/.git/*"
+        ]
+      }
+    },
+    "cache": {
+      "cmd": "deno cache --reload --lock-write deps.ts",
+      "desc": "Caching deno dependencies",
+      "lock": "lock.json",
+      "watch": false
+    }
+  }
+}
