@@ -1,4 +1,4 @@
-import { Database, SQLite3Connector, Model, DataTypes } from "./deps.ts";
+import { Database, SQLite3Connector, Model, DataTypes, log } from "./deps.ts";
 
 const connector = new SQLite3Connector({
   filepath: "./database.sqlite",
@@ -29,3 +29,7 @@ class Business extends Model {
     name: "Something about us",
   };
 }
+
+db.link([Business]);
+db.sync();
+log.info("The app is running");

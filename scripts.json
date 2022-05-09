@@ -6,7 +6,9 @@
       "desc": "run my mod.ts file",
       "lock": "lock.json",
       "allow": [
-        "write"
+        "write",
+        "env",
+        "read"
       ],
       "watch": true,
       "watcher": {
