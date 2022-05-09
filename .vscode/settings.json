@@ -3,4 +3,7 @@
     "deno.lint": true,
     "deno.unstable": true,
     "deno.suggest.autoImports": true,
+    "cSpell.words": [
+        "Deno"
+    ],
 }
