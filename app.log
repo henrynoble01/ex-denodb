@@ -1,0 +1,12 @@
+[default]  WARNING This is a error
+[default]  ERROR This is a error
+[default]  CRITICAL This is a error
+30:This is a error
+40:This is a error
+50:This is a error
+30:This is a error
+40:This is a error
+50:This is a error
+[default - Tue May 10 2022 06:17:17 GMT+0100 (West Africa Standard Time) ]  WARNING This is a error
+[default - Tue May 10 2022 06:17:17 GMT+0100 (West Africa Standard Time) ]  ERROR This is a error
+[default - Tue May 10 2022 06:17:17 GMT+0100 (West Africa Standard Time) ]  CRITICAL This is a error

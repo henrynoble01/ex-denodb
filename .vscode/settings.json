@@ -4,6 +4,7 @@
     "deno.unstable": true,
     "deno.suggest.autoImports": true,
     "cSpell.words": [
+        "datetime",
         "Deno"
     ],
 }
