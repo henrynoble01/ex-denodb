@@ -4,7 +4,7 @@ await log.setup({
   handlers: {
     console: new log.handlers.ConsoleHandler("DEBUG"),
     file: new log.handlers.FileHandler("WARNING", {
-      filename: "./app.log",
+      filename: "./logs/app.log",
       //   you can change format of output message using keys in `LogRecord`
       formatter: "[{loggerName} - {datetime} ]  {levelName} {msg}",
       // formatter: (logRecord) => {
@@ -30,10 +30,11 @@ await log.setup({
 });
 
 export const logger = log.getLogger();
+export const logTasks = log.getLogger("tasks");
 
 // get the default logger
 // logger = log.getLogger();
 
-logger.warning("This is a error");
-logger.error("This is a error");
-logger.critical("This is a error");
+// logger.warning("This is a error");
+// logger.error("This is a error");
+// logger.critical("This is a error");

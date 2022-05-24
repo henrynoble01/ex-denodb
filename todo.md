@@ -1,4 +1,4 @@
-- Set up logger 🔐
+- [✔] Set up logger 🔐 
 - Setup Tests 🧪
 - Setup oak 🔍
 - Setup Deno-db ⚾
