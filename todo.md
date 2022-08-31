@@ -2,7 +2,7 @@
 - Setup Tests 🧪
 - Setup oak 🔍
 - Setup Deno-db ⚾
-- Setup Models 
-- Setup Controllers
-- Setup Routers
+- Setup Models 📳
+- Setup Controllers 🎮
+- Setup Routers 📍
 - Setup WebSocket - RealTIme

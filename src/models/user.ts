@@ -7,15 +7,13 @@ export class User extends Model {
   static timestamps = true;
 
   static fields = {
-    userGuid: {
+    UserGuid: {
       type: DataTypes.UUID,
       primaryKey: true,
+      // autoIncrement: true,
+      // unique: true,
     },
-    userName: {
-      type: DataTypes.STRING,
-    },
-    email: {
-      type: DataTypes.STRING,
-    },
+    UserName: DataTypes.STRING,
+    Email: DataTypes.STRING,
   };
 }
