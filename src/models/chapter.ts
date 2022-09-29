@@ -1,4 +1,4 @@
-import { DataTypes, Model } from "../../deps.ts";
+import { DataTypes, Model } from "deno_db";
 
 export class Chapter extends Model {
   static table = "models";
@@ -10,6 +10,6 @@ export class Chapter extends Model {
       primaryKey: true,
       autoIncrement: true,
     },
-    Content: DataTypes.integer(100000),
+    Content: DataTypes.integer(100_000),
   };
 }

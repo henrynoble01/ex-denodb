@@ -3,6 +3,7 @@
     "deno.lint": true,
     "deno.unstable": true,
     "deno.suggest.autoImports": true,
+    "deno.importMap": "./import_map.json",
     "cSpell.words": [
         "datetime",
         "Deno"

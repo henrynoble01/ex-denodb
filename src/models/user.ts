@@ -1,4 +1,4 @@
-import { Model, DataTypes } from "../../deps.ts";
+import { Model, DataTypes } from "deno_db";
 
 export class User extends Model {
   // Table Name

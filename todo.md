@@ -1,3 +1,4 @@
+- [start scripts] deno start
 - [✔] Set up logger 🔐 
 - Setup Tests 🧪
 - Setup oak 🔍

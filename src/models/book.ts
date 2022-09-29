@@ -1,4 +1,4 @@
-import { DataTypes, Model } from "../../deps.ts";
+import { DataTypes, Model } from "deno_db";
 
 export class Book extends Model {
   static table = "books";
@@ -13,5 +13,6 @@ export class Book extends Model {
     Name: DataTypes.STRING,
     Description: DataTypes.string(2000),
     Rating: DataTypes.INTEGER,
+    Author: DataTypes.STRING,
   };
 }

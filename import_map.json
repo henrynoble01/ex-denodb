@@ -1,0 +1,7 @@
+{
+    "imports": {
+        "std/": "https://deno.land/std@0.145.0/",
+        "deno_db": "https://raw.githubusercontent.com/joeldesante/denodb/master/mod.ts",
+        "oak": "https://deno.land/x/oak@v10.2.1/mod.ts"
+    }
+}

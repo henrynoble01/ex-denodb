@@ -1,4 +1,4 @@
-import { log } from "../../deps.ts";
+import * as log from "std/log/mod.ts";
 
 await log.setup({
   handlers: {
