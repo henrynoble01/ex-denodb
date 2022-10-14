@@ -2,6 +2,8 @@
     "imports": {
         "std/": "https://deno.land/std@0.145.0/",
         "deno_db": "https://raw.githubusercontent.com/joeldesante/denodb/master/mod.ts",
-        "oak": "https://deno.land/x/oak@v10.2.1/mod.ts"
+        "oak": "https://deno.land/x/oak@v10.2.1/mod.ts",
+        "surreal_db": "https://deno.land/x/surrealdb@v0.2.0/mod.ts",
+        "zod": "https://deno.land/x/zod@v3.16.1/mod.ts"
     }
 }

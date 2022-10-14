@@ -1,8 +1,9 @@
-import { Database, SQLite3Connector } from "deno_db";
-import { User } from "./src/models/user.ts";
+import { Database, Relationships, SQLite3Connector } from "deno_db";
+import { Role } from "../models/roles.ts";
+import { User } from "../models/user.ts";
 
 const connector = new SQLite3Connector({
-  filepath: "./db/database.sqlite",
+  filepath: "./db/databaseV2.sqlite",
 });
 
 // const connector = new PostgresConnector({
@@ -14,11 +15,12 @@ const connector = new SQLite3Connector({
 //   // uri:""
 // });
 
-// export const db = new Database({ connector, debug: true  });
 export const db = new Database(connector);
 
 // Many to many relationships
 // const BusinessOwner = Relationship.manyToMany(Business, Owner)
 
-db.link([User]);
+const UserRoles = Relationships.manyToMany(User, Role);
+
+db.link([UserRoles, Role, User]);
 // await db.sync();

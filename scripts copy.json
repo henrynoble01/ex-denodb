@@ -5,6 +5,7 @@
     "start": {
       "cmd": "deno run  mod.ts",
       "desc": "run my mod.ts file",
+      "lock": "lock.json",
       "allow": [
         "write",
         "env",
@@ -15,7 +16,7 @@
       "watcher": {
         "exts": [
           "ts",
-          "js",
+          "tsx",
           "json"
         ],
         "skip": [
